@@ -3,7 +3,6 @@
 import random
 import pyttsx3
 
-
 verbs = {
     'first': ['sind', 'haben', 'gehen', 'machen', 'kommen', 'sehen', 'finden', 'nehmen', 'sprechen', 'lesen', 'essen', 'trinken', 'fahren', 'schreiben', 'stehen', 'sitzen', 'liegen', 'laufen', 'arbeiten', 'spielen', 'lernen', 'fühlen', 'kennen', 'denken', 'sagen'],
     'ich': ['bin', 'habe', 'gehe', 'mache', 'komme', 'sehe', 'finde', 'nehme', 'spreche', 'lese', 'esse', 'trinke', 'fahre', 'schreibe', 'stehe', 'sitze', 'liege', 'laufe', 'arbeite', 'spiele', 'lerne', 'fühle', 'kenne', 'denke', 'sage'],
@@ -81,7 +80,10 @@ words_data = {
     },
     'das': {
         'Sofa': {'turkish_meaning': 'koltuk'},
+        'Dunkel': {'turkish_meaning': 'karanlık'},
         'Regal': {'turkish_meaning': 'raf'},
+        'Rot': {'turkish_meaning': 'kırmızı'},
+        'Weiss': {'turkish_meaning': 'beyeaz'},
         'Buch': {'turkish_meaning': 'kitap'},
         'Haus': {'turkish_meaning': 'ev'},
         'Kind': {'turkish_meaning': 'çocuk'},
@@ -140,16 +142,16 @@ def practice_verbs():
            print("Korrect")
         elif user_input_verbs == "2":
            print("""\
-                 ##########################################"
-                 # Welcome to Translation Practice Sesion #"
-                 ##########################################
+                  ##########################################"
+                  # Welcome to Translation Practice Sesion #"
+                  ##########################################
                  """)
            practice_translation()
         elif user_input_verbs == "1":
            print("""\
-                 #######################################
-                 # Welcome to Article Practice Session #
-                 #######################################
+                  #######################################
+                  # Welcome to Article Practice Session #
+                  #######################################
                  """)
            practice_articles()
         else:
@@ -167,16 +169,16 @@ def practice_articles():
             print("Correct! '{}' means '{}' in Turkish.".format(german_word, turkish_meaning))
         elif user_input == "2":
            print("""\
-                 ##########################################
-                 # Welcome to Translation Practice Sesion #
-                 ##########################################
+                  ##########################################
+                  # Welcome to Translation Practice Sesion #
+                  ##########################################
                 """)    
            practice_translation()
         elif user_input == "3":
            print("""\
-                 ####################################
-                 # Welcome to Verbs Practice Sesion #
-                 ####################################
+                  ####################################
+                  # Welcome to Verbs Practice Sesion #
+                  ####################################
                   """)    
            practice_verbs()
         elif user_input == 'quit':
@@ -205,10 +207,10 @@ def practice_translation():
            practice_articles()
         elif user_input == "3":
            print("""\
-                  ##########################################")
-                  # Welcome to Verbs Practice Sesion #")
-                  ##########################################")
-            """)
+                  ####################################
+                  # Welcome to Verbs Practice Sesion #
+                  ####################################
+                 """)
            practice_verbs()
         elif user_input == 'quit':
            print('Take care!')
@@ -219,30 +221,29 @@ def practice_translation():
 
 if __name__ == "__main__":
     print("""\
-           ###############################"
-           # Welcome to German Practice! #
-           ###############################
+                  ###############################"
+                  # Welcome to German Practice! #
+                  ###############################
     """)
     user_input_selection = input("For Article Practice Session type 1\nFor German to Turkish translation Practice Session type 2\nFor Right Form of Verb Practice type 3\nPlease type your selection and press enter: ")
     if user_input_selection == "1":
       print("""\
-             #####################################"
-             Welcome to Article Practice Session #
-             #####################################
+                  #####################################"
+                  # Welcome to Article Practice Session #
+                  #####################################
         """)
       practice_articles()
     elif user_input_selection == "2":
       print("""\
-             ####################################################
-             # Welcome to German-Turkish Translastion Practice! #
-             ####################################################
+                  ####################################################
+                  # Welcome to German-Turkish Translastion Practice! #
+                  ####################################################
         """)
       practice_translation()
     elif user_input_selection == "3":
       print("""\
-             "###########################################"
-             # Welcome to Right Form of Verb Practice! #
-             ###########################################
+                  "###########################################"
+                  # Welcome to Right Form of Verb Practice! #
+                  ###########################################
         """)
       practice_verbs()
-
