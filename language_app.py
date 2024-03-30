@@ -16,6 +16,7 @@ verbs = {
 
 words_data = {
     'der': {
+        'Teppich': {'turkish_meaning': 'halı'},
         'Wein': {'turkish_meaning': 'şarap'},
         'Hund': {'turkish_meaning': 'köpek'},
         'Tisch': {'turkish_meaning': 'masa'},
@@ -44,9 +45,11 @@ words_data = {
         'Computer': {'turkish_meaning': 'bilgisayar'},
         'Bruder': {'turkish_meaning': 'erkek kardeş'},
         'Schrank': {'turkish_meaning': 'dolap'},
+        'Fernsehen': {'turkish_meaning': 'televizyon'},
         'Kühlschrank': {'turkish_meaning': 'buzdolabı'}
     },
     'die': {
+        'Dusche': {'turkish_meaning': 'duş'},
         'Brüder': {'turkish_meaning': 'erkek kardeşler'},
         'Apfel': {'turkish_meaning': 'elma'},
         'Frau': {'turkish_meaning': 'kadın'},
@@ -54,6 +57,7 @@ words_data = {
         'Blume': {'turkish_meaning': 'çiçek'},
         'Ente': {'turkish_meaning': 'ördek'},
         'Schule': {'turkish_meaning': 'okul'},
+        'Sofas': {'turkish_meaning': 'koltuklar'},
         'Universität': {'turkish_meaning': 'üniversite'},
         'Stadt': {'turkish_meaning': 'şehir'},
         'Land': {'turkish_meaning': 'ülke'},
@@ -76,6 +80,8 @@ words_data = {
         'Stunde': {'turkish_meaning': 'saat'}
     },
     'das': {
+        'Sofa': {'turkish_meaning': 'koltuk'},
+        'Regal': {'turkish_meaning': 'raf'},
         'Buch': {'turkish_meaning': 'kitap'},
         'Haus': {'turkish_meaning': 'ev'},
         'Kind': {'turkish_meaning': 'çocuk'},
@@ -86,7 +92,6 @@ words_data = {
         'Boot': {'turkish_meaning': 'tekne'},
         'Uhr': {'turkish_meaning': 'saat'},
         'Radio': {'turkish_meaning': 'radyo'},
-        'Fernsehen': {'turkish_meaning': 'televizyon'},
         'Computer': {'turkish_meaning': 'bilgisayar'},
         'Hemd': {'turkish_meaning': 'gömlek'},
         'Mantel': {'turkish_meaning': 'palto'},
