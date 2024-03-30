@@ -132,6 +132,9 @@ def practice_verbs():
            print("# Welcome to Article Practice Session #")
            print("#######################################")
            practice_articles()
+       elif user_input == 'quit':
+            print('Take care!')
+            break
         else:
            print("\033[91mFalch! Correct form for the Verb is '{}' for '{}'.\033[0m".format(position_of_random_item, chosen_item ))
 
