@@ -139,20 +139,21 @@ def practice_verbs():
         if user_input_verbs == position_of_random_item:
            print("Korrect")
         elif user_input_verbs == "2":
-           print("##########################################")
-           print("# Welcome to Translation Practice Sesion #")
-           print("##########################################")
+           print("""\
+                 ##########################################"
+                 # Welcome to Translation Practice Sesion #"
+                 ##########################################
+                 """)
            practice_translation()
         elif user_input_verbs == "1":
-           print("#######################################")
-           print("# Welcome to Article Practice Session #")
-           print("#######################################")
+           print("""\
+                 #######################################
+                 # Welcome to Article Practice Session #
+                 #######################################
+                 """)
            practice_articles()
         else:
            print("\033[91mFalch! Correct form for the Verb is '{}' for '{}'.\033[0m".format(position_of_random_item, chosen_item ))
-
-
-
 
 def practice_articles():
     while True:
@@ -160,72 +161,88 @@ def practice_articles():
         german_word, word_data = random.choice(list(words_data[article].items()))
         turkish_meaning = word_data['turkish_meaning']
         print('Please Type "quit" to end the program')
-        user_input = raw_input("Please enter the correct article for '{}': ".format(german_word)).strip().lower()
+        user_input = input("Please enter the correct article for '{}': ".format(german_word)).strip().lower()
         
         if user_input == article:
             print("Correct! '{}' means '{}' in Turkish.".format(german_word, turkish_meaning))
         elif user_input == "2":
-           print("##########################################")
-           print("# Welcome to Translation Practice Sesion #")
-           print("##########################################")
+           print("""\
+                 ##########################################
+                 # Welcome to Translation Practice Sesion #
+                 ##########################################
+                """)    
            practice_translation()
+        elif user_input == "3":
+           print("""\
+                 ####################################
+                 # Welcome to Verbs Practice Sesion #
+                 ####################################
+                  """)    
+           practice_verbs()
         elif user_input == 'quit':
             print('Take care!')
             break
         else:
            print("\033[91mWrong! The correct article for '{}' is '{}'. '{}' means '{}' in Turkish.\033[0m".format(
                 german_word, article, german_word, turkish_meaning))
-	speak(german_word)
-
+        speak(german_word)
 
 def practice_translation():
     while True:
         article_tr = random.choice(list(words_data.keys()))
         german_word_tr, word_data = random.choice(list(words_data[article_tr].items()))
         turkish_meaning = word_data['turkish_meaning']
-        user_input = raw_input("Please enter the correct translation for '{}': ".format(german_word_tr)).strip().lower()
+        user_input = input("Please enter the correct translation for '{}': ".format(german_word_tr)).strip().lower()
         
         if user_input == turkish_meaning:
            print("Korrect!")
         elif user_input == "1":
-           print("#######################################")
-           print("# Welcome to Article Practice Session #")
-           print("#######################################")
+           print("""\
+                  #######################################
+                  # Welcome to Article Practice Session #
+                  #######################################
+            """)
            practice_articles()
+        elif user_input == "3":
+           print("""\
+                  ##########################################")
+                  # Welcome to Verbs Practice Sesion #")
+                  ##########################################")
+            """)
+           practice_verbs()
         elif user_input == 'quit':
            print('Take care!')
            break
-	else:
-           print("\033[91mFalsch! The correct translation for '{}' means '{}' in Turkish.\033[0m".format(
-                german_word_tr, turkish_meaning))
+        else:
+           print("\033[91mFalsch! The correct translation for '{}' means '{}' in Turkish.\033[0m".format(german_word_tr, turkish_meaning))
        
-
 
 if __name__ == "__main__":
     print("""\
-    ###############################"
-    # Welcome to German Practice! #
-    ###############################
-          """)
+           ###############################"
+           # Welcome to German Practice! #
+           ###############################
+    """)
     user_input_selection = input("For Article Practice Session type 1\nFor German to Turkish translation Practice Session type 2\nFor Right Form of Verb Practice type 3\nPlease type your selection and press enter: ")
     if user_input_selection == "1":
       print("""\
-      #####################################"
-      Welcome to Article Practice Session #
-      #####################################
-            """)
+             #####################################"
+             Welcome to Article Practice Session #
+             #####################################
+        """)
       practice_articles()
     elif user_input_selection == "2":
       print("""\
-      ####################################################
-      # Welcome to German-Turkish Translastion Practice! #
-      ####################################################
-            """)
+             ####################################################
+             # Welcome to German-Turkish Translastion Practice! #
+             ####################################################
+        """)
       practice_translation()
     elif user_input_selection == "3":
       print("""\
-      "###########################################"
-      # Welcome to Right Form of Verb Practice! #
-      ###########################################
-            """)
-      practice_verbs()  
+             "###########################################"
+             # Welcome to Right Form of Verb Practice! #
+             ###########################################
+        """)
+      practice_verbs()
+
