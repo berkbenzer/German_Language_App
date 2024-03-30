@@ -200,21 +200,32 @@ def practice_translation():
                 german_word_tr, turkish_meaning))
        
 
+
 if __name__ == "__main__":
-    print("Welcome to German practice!")
-    user_input_selection = input("For Article Practice Session Please Press 1\nFor German to Turkish translation Practice Session Please Press 2\nFor Right Form of Verb Practice Please Press 3: ")
+    print("""\
+    ###############################"
+    # Welcome to German Practice! #
+    ###############################
+          """)
+    user_input_selection = input("For Article Practice Session type 1\nFor German to Turkish translation Practice Session type 2\nFor Right Form of Verb Practice type 3\nPlease type your selection and press enter: ")
     if user_input_selection == "1":
-      print("#######################################")
-      print("# Welcome to Article Practice Session #")
-      print("#######################################")
+      print("""\
+      #####################################"
+      Welcome to Article Practice Session #
+      #####################################
+            """)
       practice_articles()
     elif user_input_selection == "2":
-      print("####################################################")
-      print("# Welcome to German-Turkish translastion practice! #")
-      print("####################################################")
+      print("""\
+      ####################################################
+      # Welcome to German-Turkish Translastion Practice! #
+      ####################################################
+            """)
       practice_translation()
     elif user_input_selection == "3":
-      print("###########################################")
-      print("# Welcome to Right Form of Verb Practice! #")
-      print("###########################################")
+      print("""\
+      "###########################################"
+      # Welcome to Right Form of Verb Practice! #
+      ###########################################
+            """)
       practice_verbs()  
