@@ -14,9 +14,9 @@ verbs = {
     'sie/Sie': ['sind', 'haben', 'gehen', 'machen', 'kommen', 'sehen', 'finden', 'nehmen', 'sprechen', 'lesen', 'essen', 'trinken', 'fahren', 'schreiben', 'stehen', 'sitzen', 'liegen', 'laufen', 'arbeiten', 'spielen', 'lernen', 'fühlen', 'kennen', 'denken', 'sagen']
 }
 
-
 words_data = {
     'der': {
+        'Wein': {'turkish_meaning': 'şarap'},
         'Hund': {'turkish_meaning': 'köpek'},
         'Tisch': {'turkish_meaning': 'masa'},
         'Stuhl': {'turkish_meaning': 'sandalye'},
@@ -41,9 +41,13 @@ words_data = {
         'Brief': {'turkish_meaning': 'mektup'},
         'Schlüssel': {'turkish_meaning': 'anahtar'},
         'Kopf': {'turkish_meaning': 'baş'},
-        'Computer': {'turkish_meaning': 'bilgisayar'}
+        'Computer': {'turkish_meaning': 'bilgisayar'},
+        'Bruder': {'turkish_meaning': 'erkek kardeş'},
+        'Schrank': {'turkish_meaning': 'dolap'},
+        'Kühlschrank': {'turkish_meaning': 'buzdolabı'}
     },
     'die': {
+        'Brüder': {'turkish_meaning': 'erkek kardeşler'},
         'Apfel': {'turkish_meaning': 'elma'},
         'Frau': {'turkish_meaning': 'kadın'},
         'Katze': {'turkish_meaning': 'kedi'},
@@ -68,6 +72,7 @@ words_data = {
         'Woche': {'turkish_meaning': 'hafta'},
         'Sonne': {'turkish_meaning': 'güneş'},
         'Arbeit': {'turkish_meaning': 'iş'},
+        'Kuchen': {'turkish_meaning': 'kek'},
         'Stunde': {'turkish_meaning': 'saat'}
     },
     'das': {
@@ -102,6 +107,7 @@ words_data = {
         'Jahr': {'turkish_meaning': 'yıl'},
         'Name': {'turkish_meaning': 'isim'},
         'Foto': {'turkish_meaning': 'fotoğraf'},
+        'Zimmer': {'turkish_meaning': 'oda'},
         'Frühstück': {'turkish_meaning': 'kahvaltı'}
     }
 }
