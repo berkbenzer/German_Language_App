@@ -16,6 +16,9 @@ verbs = {
 
 words_data = {
     'der': {
+        'saft': {'turkish_meaning': 'meyve suyu'},
+        'Baum': {'turkish_meaning': 'ağaç'},
+        'Kase': {'turkish_meaning': 'peynir'},
         'Teppich': {'turkish_meaning': 'halı'},
         'Wein': {'turkish_meaning': 'şarap'},
         'Hund': {'turkish_meaning': 'köpek'},
