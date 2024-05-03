@@ -144,8 +144,8 @@ class GermanPractice:
                print("Korrect")
             elif user_input_verbs == "2":
                print("""\
-                      ##########################################"
-                      # Welcome to Translation Practice Sesion #"
+                      ##########################################
+                      # Welcome to Translation Practice Sesion #
                       ##########################################
                      """)
                self.practice_translation()
@@ -228,7 +228,7 @@ class GermanPractice:
 
     def main_func(self):
         print("""\
-                      ###############################"
+                      ###############################
                       # Welcome to German Practice! #
                       ###############################
         """)
