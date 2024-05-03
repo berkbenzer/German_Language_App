@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-This version of gTTS works for MacOS
-"""
-
 import random
 from gtts import gTTS
 import os
@@ -125,12 +121,6 @@ words_data = {
     }
 }
 
-#engine = pyttsx3.init()
-
-#def speak(word):
-#    engine.say(word)
-#    engine.runAndWait()
-
 
 def practice_verbs():
     while True:
@@ -165,6 +155,10 @@ def practice_verbs():
                   #######################################
                  """)
            practice_articles()
+        elif user_input_verbs == 'quit':
+            print('Take care!')
+            main_func()
+            break
         else:
            print("\033[91mFalch! Correct form for the Verb is '{}' for '{}'.\033[0m".format(position_of_random_item, chosen_item ))
 
@@ -194,6 +188,7 @@ def practice_articles():
            practice_verbs()
         elif user_input == 'quit':
             print('Take care!')
+            main_func()
             break
         else:
            print("\033[91mWrong! The correct article for '{}' is '{}'. '{}' means '{}' in Turkish.\033[0m".format(
@@ -224,19 +219,20 @@ def practice_translation():
                  """)
            practice_verbs()
         elif user_input == 'quit':
-           print('Take care!')
-           break
+            print('Take care!')
+            main_func()
+            break
         else:
            print("\033[91mFalsch! The correct translation for '{}' means '{}' in Turkish.\033[0m".format(german_word_tr, turkish_meaning))
        
 
-if __name__ == "__main__":
+def main_func():
     print("""\
                   ###############################"
                   # Welcome to German Practice! #
                   ###############################
     """)
-    user_input_selection = input("For Article Practice Session type 1\nFor German to Turkish translation Practice Session type 2\nFor Right Form of Verb Practice type 3\nPlease type your selection and press enter: ")
+    user_input_selection = input("For Article Practice Session type 1\nFor German to Turkish translation Practice Session type 2\nFor Right Form of Verb Practice type 3\nPlease Press 9 to exit the Program\nPlease type your selection and press enter: ")
     if user_input_selection == "1":
       print("""\
                   #####################################"
@@ -258,3 +254,14 @@ if __name__ == "__main__":
                   ###########################################
         """)
       practice_verbs()
+    elif user_input_selection == "9":
+        print("""\
+                  ##############"
+                  # Take Care! #
+                  ##############
+        """)
+        return
+      
+
+if __name__ == "__main__":
+   main_func()
