@@ -122,7 +122,6 @@ class GermanPractice:
     }
 }
 
-
     def practice_verbs(self):
         while True:
 
@@ -256,7 +255,7 @@ class GermanPractice:
           self.practice_verbs()
         elif user_input_selection == "9":
             print("""\
-                      ##############"
+                      ##############
                       # Take Care! #
                       ##############
             """)
