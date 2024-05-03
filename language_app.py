@@ -235,9 +235,9 @@ class GermanPractice:
         user_input_selection = input("For Article Practice Session type 1\nFor German to Turkish translation Practice Session type 2\nFor Right Form of Verb Practice type 3\nPlease Press 9 to exit the Program\nPlease type your selection and press enter: ")
         if user_input_selection == "1":
           print("""\
-                      #####################################"
+                      #######################################
                       # Welcome to Article Practice Session #
-                      #####################################
+                      #######################################
             """)
           self.practice_articles()
         elif user_input_selection == "2":
@@ -249,7 +249,7 @@ class GermanPractice:
           self.practice_translation()
         elif user_input_selection == "3":
           print("""\
-                      "###########################################"
+                      ###########################################
                       # Welcome to Right Form of Verb Practice! #
                       ###########################################
             """)
